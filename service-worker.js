@@ -1,6 +1,6 @@
 const cacheName = 'cache-v1';
 const precacheResources = [
-  '/',
+  './',
   './main.js',
   './index.html',
 ];

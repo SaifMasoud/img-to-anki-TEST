@@ -1,7 +1,7 @@
 <!doctype html><meta charset="UTF-8"><html><head><title>Img To Anki</title><link rel="canonical" href="https://madelesi.github.io/img-to-anki-TEST/"/><meta name="viewport" content="width=device-width,user-scalable=no"/><link rel="manifest" href="manifest.json"/></head><body><label for="input">Images to add to Anki:</label><p></p><input type="file" id="input" multiple="multiple"><p></p><label for="deckName">Deck Name:</label> <input id="deckName" required minlength="1" maxlength="100" size="10" value="MyDeck"><p></p><input type="button" id="genBtn" value="Generate Deck"><p>Please wait after pressing button.</p><script src="main.js"></script><script>console.log("Trying to register ServiceWorker...")
       if('serviceWorker' in navigator) {
         navigator.serviceWorker
-                 .register('./service-worker.js/')
+                 .register('./service-worker.js')
                  .then(function() { console.log("Service Worker Registered"); });
       }
       else{console.log("No SW support")};</script></body></html>
